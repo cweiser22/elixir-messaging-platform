@@ -30,10 +30,11 @@ Will manage active Websocket connections for actively connected users. Will take
 of which node they are connected to. When a message is sent, it will be immidiately transmitted to the recipient(s) if they are also online. At the same time,
 every message will be sent a Kafka queue, which the Historical Messages Service will read from to handle permanent storage.
 
-# Message Storage Service
+#### Message Storage Service
 Will ingest chats from the Kafka queue and store them.
 
 #### User Profiles Service
+
 
 #### Auth Service
 Provided externally by Auth0.
